@@ -1,0 +1,40 @@
+{
+    "name": "jackalope2/jackalope",
+    "type": "library",
+    "description": "Jackalope PHPCR library",
+    "keywords": ["phpcr"],
+    "homepage": "http://jackalope2.github.io",
+    "license": [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Jackalope Community",
+            "homepage": "https://github.com/jackalope2/jackalope/contributors"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "phpcr/phpcr-utils": "~1.1",
+        "phpcr/phpcr": "~2.1"
+    },
+    "provide": {
+        "phpcr/phpcr-implementation": "~2.1"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Jackalope2\\": "src/" 
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { 
+            "Jackalope2\\Tests": "tests/" 
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
